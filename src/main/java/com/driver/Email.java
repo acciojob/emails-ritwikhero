@@ -28,6 +28,7 @@ public class Email {
 
         if(oldPassword.equals(password) && isValidPassword(newPassword)){
             password = newPassword;
+            return;
         }
     }
     private boolean isValidPassword(String password){
