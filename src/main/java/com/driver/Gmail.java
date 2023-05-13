@@ -22,6 +22,9 @@ public class Gmail extends Email {
 
     public Gmail(String emailId) {
         super(emailId);
+        this.inboxCapacity = inboxCapacity;
+        this.Inbox = new LinkedList<>();
+        this.Thrash = new LinkedList<>();
     }
 
     public void receiveMail(Date date, String sender, String message){
